@@ -56,6 +56,12 @@ require __DIR__ . '/../public/index.php';
 }
 ```
 
+4. vercel env add APP_KEY
+
+```
+php artisan key:generate
+```
+
 ## 增加 livewire
 
 -   參考資料：https://laravel-livewire.com/docs/2.x/quickstart
