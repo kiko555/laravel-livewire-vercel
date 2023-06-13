@@ -72,6 +72,26 @@ php artisan key:generate
 composer require livewire/livewire
 ```
 
+## Livewire 相關設定
+
+要先執行以下，不然會出現以下錯誤：
+
+```
+ The /var/task/user/bootstrap/cache directory must be present and writable.
+```
+
+To use livewire, you must publish a config file
+
+```shell
+php artisan livewire:publish --config
+```
+
+Change `manifest_path` in config/livewire.php.
+
+```php
+    'manifest_path' => env('LIVEWIRE_MANIFEST_PATH'),
+```
+
 ### Create a component
 
 ```
