@@ -107,6 +107,20 @@ php artisan view:cache
 php artisan view:clear
 ```
 
+## 在未啟動 container 前就先完成 composer install
+
+因為如果是已經有寫程式了，有些套件得先下載，不然程式一起動，就會發生各種相依套件無法啟動的問題
+
+這個 $(pwd) 是指程式碼所在的位置
+
+```
+docker run --rm -v $(pwd):/app composer install
+```
+
+參考資料：
+
+-   https://www.cloudsigma.com/deploying-laravel-nginx-and-mysql-with-docker-compose/
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
