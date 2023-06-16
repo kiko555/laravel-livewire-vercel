@@ -98,6 +98,15 @@ Change `manifest_path` in config/livewire.php.
 php artisan make:livewire counter
 ```
 
+# 導入到 php-fpm 主機
+
+## Livewire issue @livewireStyles 一直出現在畫面上
+
+```
+php artisan view:cache
+php artisan view:clear
+```
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
